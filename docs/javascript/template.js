@@ -4,6 +4,7 @@ function menu(){
     html += '<nav>';
 	html +=		'<ul id="main">';
 	html +=		'<li>HOME</li>';
+	html +=		'<li>ABOUT</li>';
 	html +=		'<li>WORK';
 	html +=		'<ul class="drop">';
 	html +=		        		'<div>';
