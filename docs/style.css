@@ -1,16 +1,27 @@
+p{
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
 p.logo{
   position: absolute;
-  top: 350px;
-  left:0;
-  width: 100%;
-  height: 100%;
-  
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+
 }
 
 p.copyLight{
-  text-align: center;
   color: #000;
-  margin-top: 700px;
+  position: absolute;
+  top: 80%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  
 }
 
 * {
@@ -21,6 +32,8 @@ body {
   
   color: white;
   text-align: center;
+  
+  height: 100%;
 }
 
 #main {

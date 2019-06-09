@@ -20,3 +20,12 @@ function menu(){
    
     document.write(html);
 }
+
+function footer(){
+
+    var html = "";
+    html += '<p class="copyLight">';
+	html +=		'<small>Copyright (c) 2019 Beyond4° All Rights Reserved.</small>';
+	html +=	'</p>';
+    document.write(html);
+}
