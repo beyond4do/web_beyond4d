@@ -2,22 +2,14 @@ function menu(){
 
     var html = "";
     html += '<nav>';
-	html +=		'<ul id="main">';
-	html +=			'<li>HOME</li></a>';
-	html +=			'<li>ABOUT</li>';
-	html +=			'<li>WORK';
-	html +=				'<ul class="drop">';
-	html +=		       		'<div>';
-	html +=		       			'<li>I always think of you</li>';
-	html +=		       		'</div>';
-	html +=		   		'</ul>';
-	html +=		    '</li>';
-	html +=			'<li>BIOGRAPHY</a></li>';
-	html +=			'<li>CONTACT</li>';
-	html +=			'<div id="marker"></div>';
+	html +=		'<ul>';
+	html +=		'<li><a href="index.html">HOME</a></li>';
+	html +=		'<li><a href="#">ABOUT</a></li>';
+	html +=		'<li><a href="#">WORK</a></li>';
+	html +=		'<li><a href="biography.html">BIOGRAPHY</a></li>';
+	html +=		'<li><a href="#">CONTACT</a></li>';
 	html +=		'</ul>';
 	html +=	'</nav>';
-   
     document.write(html);
 }
 
