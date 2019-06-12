@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Contact</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script type="text/javascript" src="javascript/template.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">menu();</script>
+		<h1>フォーム送信テスト</h1>
+		<from method="post" action="ここにGAS入れる">
+			<div class="form">
+				<p>
+					<label>お名前<br><input type="text" name="name"></label>
+				</p>
+				<p>
+					<label>メールアドレス<br><input type="email" name="address" pattern="^[a-zA-Z]{1}[0-9a-zA-Z]+[\w\.-]+@[\w\.-]+\.\w{2,}$"></label>
+				</p>
+				<p>
+					<label>内容<br></label>
+					<textarea rows = "10" cols = "60"></textarea>
+				</p>
+				<p>
+					<input type="submit" value="送信する">
+				</p>
+			</div>
+		</from>
+	</body>
+	<footer>
+		<script type="text/javascript">footer();</script>
+	</footer>
+	</body>
+</html>

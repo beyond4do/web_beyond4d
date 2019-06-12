@@ -1,3 +1,11 @@
+/*
+2019/06/12 Update
+各ページ共通部分呼び出し
+javascript
+*/
+
+
+//メニューバー呼び出し用
 function menu(){
 
     var html = "";
@@ -12,7 +20,7 @@ function menu(){
 	html +=	'</nav>';
     document.write(html);
 }
-
+//footer呼び出し用
 function footer(){
 
     var html = "";
