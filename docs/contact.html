@@ -9,26 +9,27 @@
 	<body>
 		<script type="text/javascript">menu();</script>
 		<h1>フォーム送信テスト</h1>
-		<from method="post" action="ここにGAS入れる">
-			<div class="form">
+		<form method="post" action="ここにGAS入れる">
+			<div class="input-form">
 				<p>
-					<label>お名前<br><input type="text" name="name"></label>
+					<label>Name<br>
+						<input type="text" name="name"></label>
 				</p>
 				<p>
-					<label>メールアドレス<br><input type="email" name="address" pattern="^[a-zA-Z]{1}[0-9a-zA-Z]+[\w\.-]+@[\w\.-]+\.\w{2,}$"></label>
+					<label>E-mail<br>
+						<input type="email" name="address" pattern="^[a-zA-Z]{1}[0-9a-zA-Z]+[\w\.-]+@[\w\.-]+\.\w{2,}$"></label>
 				</p>
 				<p>
-					<label>内容<br></label>
-					<textarea rows = "10" cols = "60"></textarea>
+					<label>Message<br>
+						<textarea rows = "10" cols = "60"></textarea></label>
 				</p>
 				<p>
 					<input type="submit" value="送信する">
 				</p>
 			</div>
-		</from>
+		</form>
 	</body>
 	<footer>
 		<script type="text/javascript">footer();</script>
 	</footer>
-	</body>
 </html>
