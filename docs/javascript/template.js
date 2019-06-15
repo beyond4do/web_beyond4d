@@ -12,10 +12,10 @@ function menu(){
     html += '<nav>';
 	html +=		'<ul>';
 	html +=		'<li><a href="index.html">HOME</a></li>';
-	html +=		'<li><a href="#">ABOUT</a></li>';
+	html +=		'<li><a href="about.html">ABOUT</a></li>';
 	html +=		'<li><a href="work.html">WORK</a></li>';
 	html +=		'<li><a href="biography.html">BIOGRAPHY</a></li>';
-	html +=		'<li><a href="#">CONTACT</a></li>';
+	html +=		'<li><a href="contact.html">CONTACT</a></li>';
 	html +=		'</ul>';
 	html +=	'</nav>';
     document.write(html);
