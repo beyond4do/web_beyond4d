@@ -1,6 +1,7 @@
 @import "style.css";
 
 table{
+  width: auto;
   border-spacing: 0;
   margin: 10%;
   font-size: 20px;
@@ -15,8 +16,4 @@ table td{
   border-bottom: solid 2px #ddd;
   text-align: center;
   padding: 10px 0;
-}
-
-table thead {
-  font-size: 50;
 }
