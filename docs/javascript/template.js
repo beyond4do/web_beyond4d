@@ -9,23 +9,23 @@ javascript
 function menu(){
 
     var html = "";
-    html += '<nav>';
-	html +=		'<ul>';
-	html +=		'<li><a href="index.html">HOME</a></li>';
-	html +=		'<li><a href="about.html">ABOUT</a></li>';
-	html +=		'<li><a href="work.html">WORK</a></li>';
-	html +=		'<li><a href="biography.html">BIOGRAPHY</a></li>';
-	html +=		'<li><a href="contact.html">CONTACT</a></li>';
-	html +=		'</ul>';
-	html +=	'</nav>';
+        html += '<nav>';
+      	html +=		'<ul>';
+      	html +=		'<li><a href="index.html">HOME</a></li>';
+      	html +=		'<li><a href="about.html">ABOUT</a></li>';
+      	html +=		'<li><a href="work.html">WORK</a></li>';
+      	html +=		'<li><a href="biography.html">BIOGRAPHY</a></li>';
+      	html +=		'<li><a href="contact.html">CONTACT</a></li>';
+      	html +=		'</ul>';
+      	html +=	'</nav>';
     document.write(html);
 }
 //footer呼び出し用
 function footer(){
 
     var html = "";
-    html += '<p class="copyLight">';
-	html +=		'<small>Copyright (c) 2019 Beyond4° All Rights Reserved.</small>';
-	html +=	'</p>';
+        html += '<p class="copyLight">';
+      	html +=		'<small>Copyright (c) 2019 Beyond4° All Rights Reserved.</small>';
+      	html +=	'</p>';
     document.write(html);
 }
