@@ -1,0 +1,13 @@
+@import "style.css";
+
+form{
+  text-align: left;
+  margin: auto;
+}
+
+div.input-form{
+}
+
+div.input-form p label{
+  color: blue;
+}
