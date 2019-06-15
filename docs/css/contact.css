@@ -9,5 +9,14 @@ div.input-form{
 }
 
 div.input-form p label{
-  color: blue;
+  color: #000B00;
+}
+
+input#submit-button {
+  padding: 5px 20px;
+  font-size: 1.0em;
+  background-color: #000B00;
+  color: #fff;
+  border-style: none;
+  font-family: 'Book Antiqua', serif;
 }
