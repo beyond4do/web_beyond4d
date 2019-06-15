@@ -47,6 +47,20 @@ p.copyLight{
   box-sizing: border-box;
 }
 
+.css-fade {
+ animation-name:fade-in3;
+ animation-duration:2s; //アニメーション時間
+ animation-timing-function: ease-out; //アニメーションさせるイージング
+ animation-delay:1s; //アニメーション開始させる時間
+ animation-iteration-count:1; //繰り返し回数
+ animation-direction:normal; //往復処理をするかどうか
+ animation-fill-mode: forwards; //アニメーション後のスタイルをどうするか
+}
+@keyframes fade-in3 {
+  0% {opacity: 0; transform: translate3d(0,20px,0);}
+  100% {opacity: 1; transform: translate3d(0,0,0);}
+}
+
 ul{
   margin: 0 auto;
   padding: 0;
