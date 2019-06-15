@@ -38,17 +38,27 @@ p.copyLight{
 }
 
 .css-fade {
- animation-name:fade-in3;
- animation-duration:2s; //アニメーション時間
- animation-timing-function: ease-out; //アニメーションさせるイージング
- animation-delay:1s; //アニメーション開始させる時間
- animation-iteration-count:1; //繰り返し回数
- animation-direction:normal; //往復処理をするかどうか
- animation-fill-mode: forwards; //アニメーション後のスタイルをどうするか
+  animation-name: fade-in-under;
+  animation-duration: 1.5s; /*アニメーション時間*/
+  animation-timing-function: ease-out; /*アニメーションさせるイージング*/
+  animation-delay: 0s; /*アニメーション開始させる時間*/
+  animation-iteration-count: 1; /*繰り返し回数*/
+  animation-direction: normal; /*往復処理をするかどうか*/
+  animation-fill-mode: forwards; /*アニメーション後のスタイルをどうするか*/
+  opacity: 0;
 }
-@keyframes fade-in3 {
+@keyframes fade-in-under {
   0% {opacity: 0; transform: translate3d(0,20px,0);}
   100% {opacity: 1; transform: translate3d(0,0,0);}
+}
+.css-fade.d1 {
+  animation-delay: 0.2s; /*アニメーション開始させる時間*/
+}
+.css-fade.d2 {
+  animation-delay: 0.4s; /*アニメーション開始させる時間*/
+}
+.css-fade.d3 {
+  animation-delay: 0.6s; /*アニメーション開始させる時間*/
 }
 
 ul{
