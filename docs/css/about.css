@@ -1,1 +1,23 @@
 @import "style.css";
+
+table{
+  width: 80%%;
+  border-spacing: 0;
+  margin: 10%;
+  font-size: 20px;
+}
+
+table th{
+  border-bottom: solid 2px #001100;
+  padding: 10px 0;
+}
+
+table td{
+  border-bottom: solid 2px #ddd;
+  text-align: center;
+  padding: 10px 0;
+}
+
+table thead {
+  font-size: 50;
+}
