@@ -1,7 +1,7 @@
 @import "style.css";
 
 table{
-  width: auto;
+  width: 100%;
   border-spacing: 0;
   margin: 10%;
   font-size: 20px;
