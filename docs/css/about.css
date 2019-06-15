@@ -1,9 +1,9 @@
 @import "style.css";
 
 table{
-  width: 90%;
+  width: 100%;
   border-spacing: 0;
-  margin: 10% 10% 10% 10%;
+  margin: 10%;
   font-size: 20px;
   -webkit-text-size-adjust: 100%;
 }
