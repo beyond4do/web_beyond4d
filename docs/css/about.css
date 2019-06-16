@@ -11,6 +11,7 @@ table{
 table th{
   border-bottom: solid 2px #000B00;
   padding: 20px 0;
+  width: 40%;
 }
 
 table td{
