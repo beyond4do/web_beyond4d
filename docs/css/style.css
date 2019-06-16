@@ -44,7 +44,7 @@ footer {
   animation-name: fade-in-bottom;
   animation-duration: 1.5s; /*アニメーション時間*/
   animation-timing-function: ease-out; /*アニメーションさせるイージング*/
-  animation-delay: 1s; /*アニメーション開始させる時間*/
+  animation-delay: 0s; /*アニメーション開始させる時間*/
   animation-iteration-count: 1; /*繰り返し回数*/
   animation-direction: normal; /*往復処理をするかどうか*/
   animation-fill-mode: forwards; /*アニメーション後のスタイルをどうするか*/
@@ -62,6 +62,12 @@ footer {
 }
 .css-fade.d3 {
   animation-delay: 0.6s; /*アニメーション開始させる時間*/
+}
+.css-fade.d4 {
+  animation-delay: 0.8s; /*アニメーション開始させる時間*/
+}
+.css-fade.d5 {
+  animation-delay: 1.0s; /*アニメーション開始させる時間*/
 }
 .css-fade.din-out {
   animation-delay: 4.0s; /*アニメーション開始させる時間*/
