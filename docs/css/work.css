@@ -1,5 +1,5 @@
 @import "style.css";
-@import "work-history.css";
+@import "history.css";
 
 
 body {
@@ -11,10 +11,27 @@ body,
 }
 
 h1 {
-  text-align: center;
+  text-align:center;
 }
 
-#history {
-  margin: 10%;
+table.work-table{
 
+  text-align: center;
+  width: 80%;
+  border-spacing: 0;
+  margin: 10%;
+  font-size: 20px;
+  -webkit-text-size-adjust: 100%;
+}
+
+table.work-table th{
+  border-bottom: solid 2px #000B00;
+  padding: 20px 0;
+  width: 40%;
+}
+
+table.work-table td{
+  border-bottom: solid 2px #ddd;
+  text-align: center;
+  padding: 20px 0;
 }

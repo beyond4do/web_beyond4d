@@ -1,4 +1,5 @@
 @import "style.css";
+@import "history.css";
 
 table{
   width: 80%;
@@ -18,4 +19,9 @@ table td{
   border-bottom: solid 2px #ddd;
   text-align: center;
   padding: 20px 0;
+}
+
+#history {
+  margin: 10%;
+  text-align: left;
 }
