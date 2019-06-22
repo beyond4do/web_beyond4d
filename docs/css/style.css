@@ -12,11 +12,61 @@ body,
   min-height: 100vh;
 }
 
+ul{
+  margin: 0 auto;
+  padding: 0;
+  width: 80%;
+  text-align: center;
+}
+
+ul li{
+  display: inline-block;
+  min-width: 150px;
+}
+ul li a{
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  text-decoration: none;
+  color: #555;
+  font-weight: bold;
+  text-align: center;
+}
+ul li.current{
+  /*background-color: #DEEBF7;*/
+
+}
+ul li.current a{
+  color: #555;
+}
+ul li:hover{
+  background-color: #555;
+}
+ul li a:hover{
+  color: #fff;
+}
+
+
+.font-size20{
+  font-size: 20px;
+}
+.font-size30{
+  font-size: 30px;
+}
+.font-size50 {
+  font-size: 50px;
+}
+.back-white {
+    border-radius: 30px 30px 30px 30px;
+    background-color: rgba(255,255,255, 1);
+}
+
+
+
 footer {
   margin-top: auto;
   text-align: center;
 }
-
 .logo{
   width: 100%;
   height: 100px;
@@ -27,7 +77,6 @@ footer {
   left: 0;
   margin: auto;
 }
-
 .copyLight{
   color: #000;
 }
@@ -35,7 +84,6 @@ footer {
 * {
   box-sizing: border-box;
 }
-
 .css-fade {
   animation-name: fade-in-bottom;
   animation-duration: 1.5s; /*アニメーション時間*/
@@ -88,85 +136,14 @@ footer {
 }
 
 
-ul{
-  margin: 0 auto;
-  padding: 0;
-  width: 80%;
-  text-align: center;
-}
-
-ul li{
-  display: inline-block;
-  min-width: 150px;
-}
-ul li a{
-  display: block;
-  width: 100%;
-  padding: 10px 0;
-  text-decoration: none;
-  color: #555;
-  font-weight: bold;
-  text-align: center;
-}
-ul li.current{
-  /*background-color: #DEEBF7;*/
-
-}
-ul li.current a{
-  color: #555;
-}
-ul li:hover{
-  background-color: #555;
-}
-ul li a:hover{
-  color: #fff;
-}
-
-
-.font-size20{
-  font-size: 20px;
-}
-.font-size30{
-  font-size: 30px;
-}
-.font-size50 {
-  font-size: 50px;
-}
-.back-white {
-    border-radius: 30px 30px 30px 30px;
-    background-color: rgba(255,255,255, 1);
-}
-
-#page_top{
-  width: 50px;
-  height: 50px;
+#page_top_button {
   position: fixed;
   right: 0;
-  bottom: 50px;
-  background: #3f98ef;
-  opacity: 0.6;
+  bottom: 1em;
+  right: 1em;
+  font-size: 40px;
+}
+#page_top_button:hover {
   border-radius: 50%;
-}
-#page_top a{
-  position: relative;
-  display: block;
-  width: 50px;
-  height: 50px;
-  text-decoration: none;
-}
-#page_top a::before{
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  content: '\f102';
-  font-size: 25px;
-  color: #fff;
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  top: -5px;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-  text-align: center;
+  background-color: rgba( 0, 0, 255, 0.5);
 }
