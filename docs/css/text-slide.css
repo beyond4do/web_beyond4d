@@ -1,14 +1,22 @@
+section {
+  position: relative;
+}
+
 article {
-  max-width: 80%;
+  max-width: 90%;
   margin: 1em auto;
   overflow: hidden;
-  position: static;
-  min-height: 4em;
+/*  min-height: 4em;*/
+}
+
+article p{
+  margin: auto;
 }
 
 .example-left {
   white-space: nowrap;
   position: absolute;
+  position: relative;
   text-transform: uppercase;
   opacity: .4;
 }
@@ -44,6 +52,7 @@ article {
 .example-right {
   white-space: nowrap;
   position: absolute;
+  position: relative;
   opacity: .4;
   text-transform: uppercase;
 }

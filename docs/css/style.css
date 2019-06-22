@@ -123,7 +123,6 @@ ul li a:hover{
 }
 
 
-
 .font-size20{
   font-size: 20px;
 }
@@ -133,31 +132,41 @@ ul li a:hover{
 .font-size50 {
   font-size: 50px;
 }
+.back-white {
+    border-radius: 30px 30px 30px 30px;
+    background-color: rgba(255,255,255, 1);
+}
 
-/*
-nav ul{
-  display: table;
-  margin: 0 auto;
-  padding: 0 ;
-  width: 80%;
+#page_top{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 0;
+  bottom: 50px;
+  background: #3f98ef;
+  opacity: 0.6;
+  border-radius: 50%;
+}
+#page_top a{
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+#page_top a::before{
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f102';
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -5px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
   text-align: center;
 }
-nav li{
-  display: table-cell;
-  min-width: 50px;
-}
-nav a{
-  display: block;
-  width: 100%;
-  text-decoration: none;
-  color: #555;
-  padding-bottom: 5px;
-}
-nav li.current{
-  border-bottom: 3px solid #92D050;
-}
-nav li:hover{
-  color: #E7DA66;
-  border-bottom: 3px solid #F0E475;
-}
-*/
