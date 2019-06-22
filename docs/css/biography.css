@@ -2,10 +2,36 @@
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 @import "style.css";
 #prof{
-  margin: 0 auto;
+/*  margin: 0 auto;*/
 }
+
+table {
+  width: 100%;
+}
+
 figure {
   display: inline-block;
+}
+
+div p{
+  font-size: 20px ;
+  font-weight: bold;
+/*  padding: 20%;*/
+  text-align: left;
+}
+
+.state {
+  font-size: 20px;
+}
+.state th{
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 50%;
+  text-align: right;
+}
+.state td{
+  width:100%;
+  text-align: left;
 }
 .snip1344 {
   font-family: 'Open Sans', Arial, sans-serif;
