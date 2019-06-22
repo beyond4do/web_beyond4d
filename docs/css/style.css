@@ -17,10 +17,6 @@ footer {
   text-align: center;
 }
 
-.font-size50 {
-  font-size: 50px;
-}
-
 .logo{
   width: 100%;
   height: 100px;
@@ -54,6 +50,10 @@ footer {
   0% {opacity: 0; transform: translate3d(0,20px,0);}
   100% {opacity: 1; transform: translate3d(0,0,0);}
 }
+@keyframes fade-in {
+  0% {opacity: 0; transform: translate3d(0,0,0);}
+  100% {opacity: 1; transform: translate3d(0,0,0);}
+}
 .css-fade.d1 {
   animation-delay: 0.2s; /*アニメーション開始させる時間*/
 }
@@ -76,7 +76,10 @@ footer {
   animation-name: fade-in-bottom-out-top;
   animation-duration: 3s; /*アニメーション時間*/
 }
-
+.css-fade.fade-in {
+  animation-name: fade-in;
+  animation-duration: 3s; /*アニメーション時間*/
+}
 @keyframes fade-in-bottom-out-top {
   0% {opacity: 0; transform: translate3d(0,20px,0);}
   40% {opacity: 1; transform: translate3d(0,0,0);}
@@ -118,6 +121,19 @@ ul li:hover{
 ul li a:hover{
   color: #fff;
 }
+
+
+
+.font-size20{
+  font-size: 20px;
+}
+.font-size30{
+  font-size: 30px;
+}
+.font-size50 {
+  font-size: 50px;
+}
+
 /*
 nav ul{
   display: table;
