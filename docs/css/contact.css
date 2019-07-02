@@ -2,16 +2,17 @@
 author: Qooto
 update: 2019-06-22
 */
-form{
-  text-align: left;
+#googleForm {
+  text-align: center;
   margin: auto;
 }
 
-div.input-form{
+.contact{
+  text-align: left;
 }
 
-div.input-form p label{
-  color: #000B00;
+.contact div{
+  padding-bottom: 2%;
 }
 
 input#submit-button {
@@ -21,4 +22,8 @@ input#submit-button {
   color: #fff;
   border-style: none;
   font-family: 'Book Antiqua', serif;
+}
+
+#success, #error {
+  display: none;
 }
