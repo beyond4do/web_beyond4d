@@ -14,7 +14,7 @@ h1 {
   text-align:center;
 }
 
-table.work-table{
+table.works-table{
 
   text-align: center;
   width: 80%;
@@ -24,13 +24,13 @@ table.work-table{
   -webkit-text-size-adjust: 100%;
 }
 
-table.work-table th{
+table.works-table th{
   border-bottom: solid 2px #000B00;
   padding: 20px 0;
   width: 40%;
 }
 
-table.work-table td{
+table.works-table td{
   border-bottom: solid 2px #ddd;
   text-align: center;
   padding: 20px 0;

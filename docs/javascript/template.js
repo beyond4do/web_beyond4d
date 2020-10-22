@@ -22,23 +22,27 @@ function head(){
 //メニューバー呼び出し用
 function menu(){
 
-    var html = "";
-        html += '<nav>';
-      	html +=		'<ul>';
-      	html +=		'<li><a href="index.html">HOME</a></li>';
-      	html +=		'<li><a href="about.html">ABOUT</a></li>';
-      	html +=		'<li><a href="work.html">WORK</a></li>';
-      	html +=		'<li><a href="biography.html">BIOGRAPHY</a></li>';
-      	html +=		'<li><a href="contact.html">CONTACT</a></li>';
-      	html +=		'</ul>';
-      	html +=	'</nav>';
+    let html = '';
+        html +=		'<header class="header">';
+        html +=		'  <img src="http://placehold.jp/24/87ceeb/777777/240x40.png?text=Be4°">';
+        html +=		'  <div class="header-right">';
+        html +=		'    <ul>';
+        html +=		'      <li><a href="index.html">HOME</a></li>';
+        html +=		'      <li><a href="about.html">ABOUT</a></li>';
+        html +=		'      <li><a href="works.html">WORKS</a></li>';
+        html +=		'      <li><a href="members.html">MEMBERS</a></li>';
+        html +=		'      <li><a href="contact.html">CONTACT</a></li>';
+        html +=		'    </ul>';
+        html +=   ' </div>';
+      	html +=		'</header>';
     document.write(html);
 }
+
 //footer呼び出し用
 function footer(){
 
     var html = "";
-        html += '<p class="copyLight">';
+        html += '<p class="footer">';
       	html +=		'<small>Copyright (c) 2019 be4° All Rights Reserved.</small>';
       	html +=	'</p>';
     document.write(html);

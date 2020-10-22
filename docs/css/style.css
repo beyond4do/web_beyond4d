@@ -3,6 +3,7 @@ body {
   text-align: center;
   height: 100%;
   font-family: 'Book Antiqua', serif;
+  margin: 0;
 }
 
 body,
@@ -18,7 +19,6 @@ ul{
   width: 80%;
   text-align: center;
 }
-
 ul li{
   display: inline-block;
   min-width: 150px;
@@ -77,13 +77,61 @@ footer {
   left: 0;
   margin: auto;
 }
-.copyLight{
+
+/* ヘッダのCSS */
+.header {
+  z-index: 10;
+  display: flex;
+  position: sticky;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 40px;
+  top: 0;
+  height: 90px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 3px 7px -4px rgba(0, 0, 0, 0.5);
+}
+.header-right {
+  width: 600px;
+  height: 30px;
+}
+.header-right ul {
+  width: auto;
+  height: 30px;
+}
+.header-right ul li {
+  min-width: 75px;
+  font-size: 14px;
+}
+.header-right ul li a {
+  padding: 0 5px;
+  width: 105px;
+  height: 30px;
+  line-height: 30px;
+}
+@media screen and (min-width: 768px) {
+  .header-right ul li {
+    font-size: 16px;
+  }
+  .header-right ul li a {
+    padding: 0 5px;
+    width: 115px;
+    height: 30px;
+    line-height: 30px;
+  }
+}
+
+/* フッタのCSS */
+.footer {
   color: #000;
 }
 
 * {
   box-sizing: border-box;
 }
+
+/* アニメーション */
 .css-fade {
   animation-name: fade-in-bottom;
   animation-duration: 1.5s; /*アニメーション時間*/
@@ -135,7 +183,7 @@ footer {
   100% {opacity: 0; transform: translate3d(0,-20px,0);}
 }
 
-
+/* ページトップへ戻るボタン */
 #page_top_button {
   position: fixed;
   right: 0;
@@ -143,7 +191,7 @@ footer {
   right: 1em;
   font-size: 40px;
 }
-#page_top_button:hover {
+ion-icon svg:hover {
   border-radius: 50%;
-  background-color: rgba( 0, 0, 255, 0.5);
+  background-color: rgba( 136, 185, 196, 0.5);
 }
