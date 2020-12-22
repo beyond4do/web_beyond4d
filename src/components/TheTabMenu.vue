@@ -215,13 +215,13 @@ export default {
         background-color: #707070;
 
         .btn-menu {
-          height: 6vh;
+          height: 50px;
           cursor: pointer;
 
           p {
             height: 100%;
             margin: 0;
-            line-height: 6vh;
+            line-height: 3;
           }
         }
       }

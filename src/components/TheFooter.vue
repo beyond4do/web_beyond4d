@@ -47,7 +47,6 @@ export default {
 #footer {
   display: flex;
   justify-content: center;
-  height: 34vh;
   background-color: #3c3c3c;
 
   .footer-wrapper {
@@ -73,12 +72,13 @@ export default {
     }
 
     .footer-bottom {
+      margin: 30px;
+
       img {
         width: 220px;
       }
 
       p {
-        margin: 30px 0;
         color: #fff;
       }
 

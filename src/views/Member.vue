@@ -183,7 +183,7 @@ export default {
 #member {
 
   .member-top {
-    height: calc(100vh - 60px);
+    min-height: calc(100vh - 60px);
     margin-bottom: 60px;
 
     .title {
