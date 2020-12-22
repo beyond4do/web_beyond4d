@@ -33,7 +33,7 @@ export default {
 @import "@/assets/sass/prepends.scss";
 
 #about {
-  height: calc(100vh - 60px);
+  min-height: calc(100vh - 60px);
   margin: 0 10%;
 
   p, h2 {

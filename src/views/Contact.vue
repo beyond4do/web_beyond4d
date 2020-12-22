@@ -198,7 +198,7 @@ export default {
 @import "@/assets/sass/prepends.scss";
 
 #contact {
-  height: calc(105vh - 60px);
+  min-height: calc(105vh - 60px);
 
   .contact-wrapper {
     margin:  0 10%;
