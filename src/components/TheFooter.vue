@@ -19,7 +19,7 @@
       </div>
       <div class="footer-bottom">
         <img src="@/assets/img/logo_white.png">
-        <p>Copyright (c) Be4° All Rights Reserved.</p>
+        <p>Copyright (c) B4° All Rights Reserved.</p>
       </div>
     </div>
   </div>

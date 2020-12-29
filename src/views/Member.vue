@@ -183,6 +183,7 @@ export default {
 #member {
 
   .member-top {
+    position: relative;
     min-height: calc(100vh - 60px);
     margin-bottom: 60px;
 
@@ -194,12 +195,13 @@ export default {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(5, 1fr);
-      margin: 0 5%;
       @include mq(base) {
+        position: absolute;
         display: flex;
+        width: 100%;
+        height: 80%;
         justify-content: space-around;
         align-items: center;
-        height: 80%;
       }
 
       div {

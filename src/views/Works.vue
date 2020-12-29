@@ -133,7 +133,7 @@
 <script>
 import BaseModal from '@/components/BaseModal'
 import { WORKS_TAB_TYPE } from '@/const'
-const defaultSrc = require('@/assets/img/be4d_3d.png')
+const defaultSrc = require('@/assets/img/works_be4d.png')
 
 export default {
   name: 'Works',
@@ -152,7 +152,7 @@ export default {
           title: 'I always think of you',
           src: defaultSrc,
           url: 'https://novelgame.jp/games/show/2338',
-          creater: 'Be4°',
+          creater: 'B4°',
           type: WORKS_TAB_TYPE.GAME,
           sort: 1
         },
@@ -161,7 +161,7 @@ export default {
           title: 'This website',
           src: defaultSrc,
           url: '',
-          creater: 'Be4°',
+          creater: 'B4°',
           type: WORKS_TAB_TYPE.DESIGN,
           sort: 2
         },
