@@ -44,7 +44,7 @@ const routes = [
 const router = new VueRouter({
   // TODO: github.ioで404のリダイレクト処理入れれるようになったら…
   // mode: 'history',
-  // base: process.env.NODE_ENV === 'production' ? 'be4d_web/' : '',
+  // base: process.env.NODE_ENV === 'production' ? 'web/' : '',
   routes,
   scrollBehavior (to, from, savedPosition) {
     // ページ遷移時にトップへ移動
