@@ -15,7 +15,7 @@
             @click="onClickIcon($refs.kies)"
           >
             <transition appear name="top">
-              <!-- TODO: 画像 -->
+              <img src="@/assets/img/icon_kies.png"/>
             </transition>
             <transition appear name="top">
               <p>春風Kieß</p>

@@ -166,7 +166,7 @@ export default {
           sort: 2
         },
         {
-          date: 'YYYY/MM/DD',
+          date: '2020/12/27',
           title: 'This jacket',
           src: defaultSrc,
           url: '',
