@@ -14,44 +14,74 @@
             class="kies"
             @click="onClickIcon($refs.kies)"
           >
-            <transition appear name="top">
+            <transition
+              appear
+              name="top"
+            >
               <img src="@/assets/img/icon_kies.png"/>
             </transition>
-            <transition appear name="top">
+            <transition
+              appear
+              name="top"
+            >
               <p>春風Kieß</p>
             </transition>
-            <transition appear name="top">
+            <transition
+              appear
+              name="top"
+            >
               <p>writer</p>
             </transition>
           </div>
         </transition>
         <!-- Yussiy -->
-        <transition appear name="bottom">
+        <transition
+          appear
+          name="bottom"
+        >
           <div
             class="yussiy"
             @click="onClickIcon($refs.yussiy)"
           >
-            <transition appear name="bottom">
+            <transition
+              appear
+              name="bottom"
+            >
               <img src="@/assets/img/icon_yussiy.png"/>
             </transition>
-            <transition appear name="bottom">
+            <transition
+              appear
+              name="bottom"
+            >
               <p>Yussiy</p>
             </transition>
-            <transition appear name="bottom">
+            <transition
+              appear
+              name="bottom"
+            >
               <p>engineer</p>
             </transition>
           </div>
         </transition>
         <!-- セカ -->
-        <transition appear name="top">
+        <transition
+          appear
+          name="top"
+        >
           <div
             class="seka"
             @click="onClickIcon($refs.seka)"
           >
-            <transition appear name="top">
+            <transition
+              appear
+              name="top"
+            >
               <img src="@/assets/img/icon_seka.png"/>
             </transition>
-            <transition appear name="top">
+            <transition
+              appear
+              name="top"
+            >
               <p>セカ</p>
             </transition>
             <transition appear name="top">
@@ -60,32 +90,53 @@
           </div>
         </transition>
         <!-- Rafits -->
-        <transition appear name="bottom">
+        <transition
+          appear
+          name="bottom"
+        >
           <div
             class="rafits"
             @click="onClickIcon($refs.rafits)"
           >
-            <transition appear name="bottom">
+            <transition
+              appear
+              name="bottom"
+            >
               <img src="@/assets/img/icon_rafits.png"/>
             </transition>
-            <transition appear name="bottom">
+            <transition
+              appear
+              name="bottom"
+            >
               <p>Rafits</p>
             </transition>
-            <transition appear name="bottom">
+            <transition
+              appear
+              name="bottom"
+            >
               <p>engineer</p>
             </transition>
           </div>
         </transition>
         <!-- Qued -->
-        <transition appear name="top">
+        <transition
+          appear
+          name="top"
+        >
           <div
             class="qued"
             @click="onClickIcon($refs.qued)"
           >
-            <transition appear name="top">
+            <transition
+              appear
+              name="top"
+            >
               <img src="@/assets/img/icon_qued.jpg"/>
             </transition>
-            <transition appear name="top">
+            <transition
+              appear
+              name="top"
+            >
               <p>Qued</p>
             </transition>
             <transition appear name="top">
