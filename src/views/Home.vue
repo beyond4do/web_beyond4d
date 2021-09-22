@@ -5,7 +5,7 @@
 -->
 <template>
   <div id="home">
-    <img src="@/assets/img/lp_top.webp" style="object-fit: cover">
+    <img src="@/assets/img/lp_top.png" style="object-fit: cover">
     <div class="sub-header">
       <h2>NEWS</h2>
     </div>
