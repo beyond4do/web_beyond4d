@@ -18,7 +18,7 @@
               appear
               name="top"
             >
-              <img src="@/assets/img/icon_kies.png"/>
+              <img src="@/assets/img/icon_kies.webp"/>
             </transition>
             <transition
               appear
@@ -102,7 +102,7 @@
               appear
               name="bottom"
             >
-              <img src="@/assets/img/icon_rafits.png"/>
+              <img src="@/assets/img/icon_rafits.webp"/>
             </transition>
             <transition
               appear
