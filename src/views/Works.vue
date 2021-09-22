@@ -54,20 +54,20 @@
       >
         <span>DESIGN</span>
       </label>
-      <!-- MUSIC -->
+      <!-- MOVIE -->
       <input
         v-model="tabType"
-        id="music"
+        id="movie"
         type="radio"
         name="item"
-        :value="WORKS_TAB_TYPE.MUSIC"
+        :value="WORKS_TAB_TYPE.MOVIE"
         @change="onChangeTab"
       >
       <label
         class="tab_item"
-        for="music"
+        for="movie"
       >
-        <span>MUSIC</span>
+        <span>MOVIE</span>
       </label>
       <!-- SCENARIO -->
       <input
@@ -180,7 +180,7 @@ export default {
           src: 'https://unsplash.it/250/250?random',
           url: '',
           creater: 'with you...',
-          type: WORKS_TAB_TYPE.MUSIC,
+          type: WORKS_TAB_TYPE.MOVIE,
           sort: 0
         },
         {
