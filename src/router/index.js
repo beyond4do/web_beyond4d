@@ -38,13 +38,16 @@ const routes = [
     path: '/terms',
     name: 'Terms',
     component: () => import('@/views/Terms.vue')
+  },
+  {
+    path: '*',
+    name: 'Not Found',
+    component: () => import('@/views/404.vue')
   }
 ]
 
 const router = new VueRouter({
-  // TODO: github.ioで404のリダイレクト処理入れれるようになったら…
-  // mode: 'history',
-  // base: process.env.NODE_ENV === 'production' ? 'web/' : '',
+  mode: 'history',
   routes,
   scrollBehavior (to, from, savedPosition) {
     // ページ遷移時にトップへ移動

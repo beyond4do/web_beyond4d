@@ -3,7 +3,7 @@ export const WORKS_TAB_TYPE = {
   ALL      : 'ALL',
   GAME     : 'GAME',
   DESIGN   : 'DESIGN',
-  MUSIC    : 'MUSIC',
+  MOVIE    : 'MOVIE',
   SCENARIO : 'SCENARIO'
 }
 

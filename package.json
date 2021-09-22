@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "axios": "^0.21.0",
+    "firebase": "^9.0.2",
     "lottie-web": "^5.7.3",
     "vue": "^2.5.2",
     "vue-mq": "^1.0.1",
