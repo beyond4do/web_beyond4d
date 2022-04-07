@@ -112,7 +112,7 @@
           class="works-modal-img"
           :src="showWorkData.src"
         />
-        <div>
+        <div class="works-modal-text">
           <p>{{ showWorkData.date }}</p>
           <p>{{ showWorkData.title }}</p>
           <p class="link">
@@ -184,13 +184,13 @@ export default {
           sort: 0
         },
         {
-          date: 'YYYY/MM/DD',
-          title: 'Coming soon...',
-          src: 'https://unsplash.it/300/300?random',
-          url: '',
-          creater: 'with you...',
+          date: '2022/01/01',
+          title: 'モンスターテイマーは世界で最も適当な',
+          src: defaultSrc,
+          url: 'https://ncode.syosetu.com/n2391hk/',
+          creater: 'Rafits',
           type: WORKS_TAB_TYPE.SCENARIO,
-          sort: 0
+          sort: 1
         }
       ],
       showWorks: []
@@ -369,10 +369,11 @@ export default {
       }
     }
 
-    &-img {
+    .works-modal-img {
       // SP
       height: auto;
       width: 60vw;
+      margin-bottom: 30px;
 
       @include mq(middle) {
         height: auto;
