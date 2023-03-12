@@ -17,11 +17,8 @@
         name="item"
         :value="WORKS_TAB_TYPE.ALL"
         @change="onChangeTab"
-      >
-      <label
-        class="tab_item"
-        for="all"
-      >
+      />
+      <label class="tab_item" for="all">
         <span>ALL</span>
       </label>
       <!-- GAME -->
@@ -32,11 +29,8 @@
         name="item"
         :value="WORKS_TAB_TYPE.GAME"
         @change="onChangeTab"
-      >
-      <label
-        class="tab_item"
-        for="game"
-      >
+      />
+      <label class="tab_item" for="game">
         <span>GAME</span>
       </label>
       <!-- DESIGN -->
@@ -47,11 +41,8 @@
         name="item"
         :value="WORKS_TAB_TYPE.DESIGN"
         @change="onChangeTab"
-      >
-      <label
-        class="tab_item"
-        for="design"
-      >
+      />
+      <label class="tab_item" for="design">
         <span>DESIGN</span>
       </label>
       <!-- MOVIE -->
@@ -62,11 +53,8 @@
         name="item"
         :value="WORKS_TAB_TYPE.MOVIE"
         @change="onChangeTab"
-      >
-      <label
-        class="tab_item"
-        for="movie"
-      >
+      />
+      <label class="tab_item" for="movie">
         <span>MOVIE</span>
       </label>
       <!-- SCENARIO -->
@@ -77,11 +65,8 @@
         name="item"
         :value="WORKS_TAB_TYPE.SCENARIO"
         @change="onChangeTab"
-      >
-      <label
-        class="tab_item"
-        for="scenario"
-      >
+      />
+      <label class="tab_item" for="scenario">
         <span>SCENARIO</span>
       </label>
     </div>
@@ -93,26 +78,17 @@
           class="each_content"
           :key="workData.id"
         >
-          <img
-            :src="workData.src"
-            @click="openModal(workData)"
-          />
+          <img :src="workData.src" @click="openModal(workData)" />
           <p>{{ workData.title }}</p>
         </div>
       </div>
     </div>
 
     <!-- モーダル -->
-    <BaseModal
-      v-if="isModalOpen"
-      @close="closeModal"
-    >
+    <BaseModal v-if="isModalOpen" @close="closeModal">
       <div class="works-modal">
-        <img
-          class="works-modal-img"
-          :src="showWorkData.src"
-        />
-        <div>
+        <img class="works-modal-img" :src="showWorkData.src" />
+        <div class="works-modal-text">
           <p>{{ showWorkData.date }}</p>
           <p>{{ showWorkData.title }}</p>
           <p class="link">
@@ -121,7 +97,8 @@
               :href="showWorkData.url"
               target="_blank"
               rel="noopener"
-              >▶ Link</a>
+              >▶ Link</a
+            >
           </p>
           <p style="color: #fff">{{ showWorkData.creater }}</p>
         </div>
@@ -131,16 +108,16 @@
 </template>
 
 <script>
-import BaseModal from '@/components/BaseModal'
-import { WORKS_TAB_TYPE } from '@/const'
-const defaultSrc = require('@/assets/img/works_be4d.png')
+import BaseModal from "@/components/BaseModal";
+import { WORKS_TAB_TYPE } from "@/const";
+const defaultSrc = require("@/assets/img/works_be4d.png");
 
 export default {
-  name: 'Works',
+  name: "Works",
   components: {
     BaseModal
   },
-  data () {
+  data() {
     return {
       WORKS_TAB_TYPE,
       tabType: WORKS_TAB_TYPE.ALL,
@@ -148,91 +125,102 @@ export default {
       showWorkData: null,
       works: [
         {
-          date: '2019/08/31',
-          title: 'I always think of you',
+          date: "2022/10/01",
+          title: "異世界セールスをぶっ壊す",
           src: defaultSrc,
-          url: 'https://novelgame.jp/games/show/2338',
-          creater: 'B4°',
+          url: "https://novelgame.jp/games/show/7148",
+          creater: "B4°",
           type: WORKS_TAB_TYPE.GAME,
           sort: 1
         },
         {
-          date: '2020/12/31',
-          title: 'This website',
+          date: "2022/01/01",
+          title: "モンスターテイマーは世界で最も適当な",
           src: defaultSrc,
-          url: '',
-          creater: 'B4°',
-          type: WORKS_TAB_TYPE.DESIGN,
+          url: "https://ncode.syosetu.com/n2391hk/",
+          creater: "Rafits",
+          type: WORKS_TAB_TYPE.SCENARIO,
           sort: 2
         },
         {
-          date: '2020/12/27',
-          title: 'This jacket',
+          date: "2019/08/31",
+          title: "I always think of you",
           src: defaultSrc,
-          url: '',
-          creater: 'セカ',
-          type: WORKS_TAB_TYPE.DESIGN,
+          url: "https://novelgame.jp/games/show/2338",
+          creater: "B4°",
+          type: WORKS_TAB_TYPE.GAME,
           sort: 3
         },
         {
-          date: 'YYYY/MM/DD',
-          title: 'Coming soon...',
-          src: 'https://unsplash.it/250/250?random',
-          url: '',
-          creater: 'with you...',
-          type: WORKS_TAB_TYPE.MOVIE,
-          sort: 0
+          date: "2020/12/31",
+          title: "This website",
+          src: defaultSrc,
+          url: "",
+          creater: "B4°",
+          type: WORKS_TAB_TYPE.DESIGN,
+          sort: 4
         },
         {
-          date: 'YYYY/MM/DD',
-          title: 'Coming soon...',
-          src: 'https://unsplash.it/300/300?random',
-          url: '',
-          creater: 'with you...',
-          type: WORKS_TAB_TYPE.SCENARIO,
+          date: "2020/12/27",
+          title: "This jacket",
+          src: defaultSrc,
+          url: "",
+          creater: "セカ",
+          type: WORKS_TAB_TYPE.DESIGN,
+          sort: 5
+        },
+        {
+          date: "YYYY/MM/DD",
+          title: "Coming soon...",
+          src: "https://unsplash.it/250/250?random",
+          url: "",
+          creater: "with you...",
+          type: WORKS_TAB_TYPE.MOVIE,
           sort: 0
         }
       ],
       showWorks: []
-    }
+    };
   },
-  mounted () {
-    this.onChangeTab()
+  mounted() {
+    this.onChangeTab();
   },
   methods: {
     /**
      * タブを切り替える
      * @param e:Event
      */
-    onChangeTab (e) {
+    onChangeTab(e) {
       if (e) {
-        this.tabType = e.target.value
+        this.tabType = e.target.value;
       } else {
-        this.tabType = WORKS_TAB_TYPE.ALL
+        this.tabType = WORKS_TAB_TYPE.ALL;
       }
       if (this.tabType === WORKS_TAB_TYPE.ALL) {
-        this.showWorks = this.works
+        this.showWorks = this.works;
       } else {
-        this.showWorks = this.works.filter(element => element.type === this.tabType)
+        this.showWorks = this.works.filter(
+          element => element.type === this.tabType
+        );
       }
     },
     /**
      * モーダルを開く
      * @param e:Event
      */
-    openModal (data) {
-      this.isModalOpen = true
-      this.showWorkData = data
+    openModal(data) {
+      this.isModalOpen = true;
+      this.showWorkData = data;
     },
     /**
      * モーダルを閉じる
      */
-    closeModal () {
-      this.isModalOpen = false
-      this.showWorkData = null
+    closeModal() {
+      this.isModalOpen = false;
+      this.showWorkData = null;
     }
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
@@ -273,7 +261,6 @@ export default {
     }
 
     input {
-
       &[name="item"] {
         display: none;
       }
@@ -319,7 +306,7 @@ export default {
 
         img {
           max-width: 80%;
-          max-height : 80%;
+          max-height: 80%;
         }
 
         p {
@@ -346,12 +333,13 @@ export default {
     height: 100%;
     flex-direction: column;
 
-    p, a {
+    p,
+    a {
       margin: 0;
       line-height: 1.5;
       font-size: 24px;
       text-align: center;
-      color: #fff
+      color: #fff;
     }
     a {
       text-decoration-line: underline;
@@ -361,7 +349,8 @@ export default {
       // PC
       flex-direction: unset;
 
-      p, a {
+      p,
+      a {
         text-align: left;
       }
       .link {
@@ -369,10 +358,11 @@ export default {
       }
     }
 
-    &-img {
+    .works-modal-img {
       // SP
       height: auto;
       width: 60vw;
+      margin-bottom: 30px;
 
       @include mq(middle) {
         height: auto;
