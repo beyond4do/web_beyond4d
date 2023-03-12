@@ -25,6 +25,24 @@ npm run e2e
 
 # run all tests
 npm test
+
 ```
+
+`npm run dev`
+で起動。
+`localhost:8080/`
+で確認。
+
+`npm run build`
+で build。
+
+`firebase login`
+でログイン。長期ログインしてない場合は、いったん `firebase logout` してからログイン。
+
+`firebase deploy`
+でデプロイ。
+
+`https://be4d-create.web.app`
+で確認。
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
