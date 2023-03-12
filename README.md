@@ -1,10 +1,10 @@
 # be4d
 
-> 
+> be4d-create.web.app にて公開されている be4d 公式サイトです。
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 npm install
 

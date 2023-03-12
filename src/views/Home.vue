@@ -1,3 +1,4 @@
+/* eslint-disable */
 <!--
 @file    Home.vue
 @brief   ホームページ
@@ -5,7 +6,7 @@
 -->
 <template>
   <div id="home">
-    <img src="@/assets/img/lp_top.png" style="object-fit: cover">
+    <img src="@/assets/img/lp_top.png" style="object-fit: cover" />
     <div class="sub-header">
       <h2>NEWS</h2>
     </div>
@@ -13,10 +14,7 @@
       <!-- PC版のテーブルニュース -->
       <template v-if="$mq !== 'sp'">
         <table class="news-table">
-          <tr
-            v-for="news in newsList"
-            :key="news.id"
-          >
+          <tr v-for="news in newsList" :key="news.id">
             <th>{{ news.date }}</th>
             <td>{{ news.text }}</td>
           </tr>
@@ -24,11 +22,7 @@
       </template>
       <!-- SP版のニュース -->
       <template v-else>
-        <div
-          v-for="news in newsList"
-          :key="news.id"
-          class="news-list"
-        >
+        <div v-for="news in newsList" :key="news.id" class="news-list">
           <p class="date">{{ news.date }}</p>
           <p>{{ news.text }}</p>
         </div>
@@ -39,22 +33,26 @@
 
 <script>
 export default {
-  name: 'Home',
-  data () {
+  name: "Home",
+  data() {
     return {
       newsList: [
         {
-          text: '「モンスターテイマーは世界で最も適当な」を連載開始しました。',
-          date: '2022/01/01'
+          text: "「異世界セールスをぶっ壊す」を公開しました。",
+          date: "2022/10/01"
         },
         {
-          text: 'サイトを大幅リニューアル。公開しました。',
-          date: '2020/12/31'
+          text: "「モンスターテイマーは世界で最も適当な」を連載開始しました。",
+          date: "2022/01/01"
+        },
+        {
+          text: "サイトを大幅リニューアル。公開しました。",
+          date: "2020/12/31"
         }
       ]
-    }
+    };
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
